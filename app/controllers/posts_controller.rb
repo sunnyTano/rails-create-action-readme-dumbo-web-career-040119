@@ -19,4 +19,14 @@ class PostsController < ApplicationController
     redirect_to post_path(@post)
   end
 
+<<<<<<< HEAD
+=======
+def create
+  post = Post.new
+  post.title = params[:title]
+  post.description = params[:description]
+  post.save
+end
+
+>>>>>>> be1082efec86756aa502a62f2ef1f2c40d0b9986
 end
